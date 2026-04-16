@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ELISYAN</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffffff);
+    overflow-x: hidden;
+}
+
+/* Intro screen */
+#intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    letter-spacing: 8px;
+    color: #d63384;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: reveal 2s forwards;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.categories h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.category {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.1);
+    background: #ffe4ec;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Intro -->
+<section id="intro">
+    <div class="logo">ELISYAN</div>
+</section>
+
+<!-- Categories -->
+<section class="categories">
+    <h2>Collections</h2>
+
+    <div class="category">Kurti</div>
+    <div class="category">Top</div>
+    <div class="category">Gown</div>
+    <div class="category">Jeans</div>
+</section>
+
+</body>
+</html>
